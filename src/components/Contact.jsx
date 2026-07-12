@@ -67,38 +67,13 @@ const Contact = () => {
           rows="5"
           placeholder="Your Message"
           required
-          className="
-            w-full
-            bg-white/5
-            border border-white/10
-            rounded-xl
-            p-4
-            outline-none
-            resize-none
-            focus:border-[#efae1e]
-          "
+          className="w-full bg-white/5 border border-white/10 rounded-xl p-4 outline-none resize-none focus:border-[#efae1e] "
         />
 
         <button
           type="submit"
           disabled={loading}
-          className="
-            border border-[#efae1e]
-            bg-[#efae1e]
-            text-black
-            px-6
-            py-3
-            rounded-xl
-            font-semibold
-            cursor-pointer
-            transition-all
-            duration-300
-            ease-in-out
-            hover:bg-white
-            hover:border-white
-            hover:scale-105
-            disabled:opacity-70
-          "
+          className="border border-[#efae1e] bg-[#efae1e] text-black px-6 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-white hover:border-white hover:scale-105 disabled:opacity-70 "
         >
           {loading ? "Sending..." : "Send Message"}
         </button>

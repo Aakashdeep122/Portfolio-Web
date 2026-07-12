@@ -1,21 +1,30 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 import { SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
 
+const whatsappMessage = encodeURIComponent(
+  "👋 Hi Aakashdeep!\n\nI visited your portfolio website and I'm interested in working with you.\n\nCould we discuss my project?",
+);
+
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="min-h-screen flex items-center justify-center px-5 md:px-6 py-20 md:py-0">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center">
         {/* LEFT */}
-
-        <div>
+        <div className="order-2 md:order-1 text-center md:text-left">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="text-[#efae1e] text-lg mb-3"
+            className="text-[#efae1e] md:text-lg mb-3"
           >
             Hello, I'm
           </motion.p>
@@ -24,7 +33,7 @@ const Hero = () => {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight"
           >
             Aakashdeep
             <br />
@@ -35,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
-            className="mt-4 text-2xl text-gray-300 h-10"
+            className="mt-4 text-lg md:text-2xl text-gray-300"
           >
             <TypeAnimation
               sequence={[
@@ -53,13 +62,13 @@ const Hero = () => {
             />
           </motion.h2>
 
-          <p className="mt-6 text-gray-400 leading-8">
+          <p className="mt-5 text-gray-400 leading-7 max-w-xl mx-auto md:mx-0">
             Frontend Developer with 1.5+ years of experience building scalable
             and SEO-optimized web applications using React.js, Next.js and Redux
             Toolkit.
           </p>
 
-          <div className="flex gap-5 mt-8">
+          <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <a
               href="/resume.pdf"
               target="_blank"
@@ -77,7 +86,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="flex gap-5 mt-8 text-3xl">
+          <div className=" flex justify-center md:justify-start gap-6 mt-6 md:mt-8 text-3xl">
             <a
               href="https://github.com/Aakashdeep122"
               target="_blank"
@@ -91,16 +100,24 @@ const Hero = () => {
               href="https://www.linkedin.com/in/aakash122/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#efae1e] transition-all duration-300 hover:-translate-y-1"
+              className="hover:text-sky-400 transition-all duration-300 hover:-translate-y-1"
             >
               <FaLinkedin className="cursor-pointer" />
+            </a>
+
+            <a
+              href={`https://wa.me/919795071712?text=${whatsappMessage}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-green-500 transition-all duration-300 hover:-translate-y-1"
+            >
+              <FaWhatsapp className="cursor-pointer" />
             </a>
           </div>
         </div>
 
         {/* RIGHT */}
-
-        <div className="relative flex justify-center">
+        <div className="order-1 md:order-2 relative flex justify-center mb-8 md:mb-0 ">
           <motion.div
             animate={{
               y: [0, -20, 0],
@@ -109,22 +126,24 @@ const Hero = () => {
               repeat: Infinity,
               duration: 4,
             }}
-            className="w-87.5 h-87.5 rounded-full bg-gradient-to-r from-[#1c355c] to-[#efae1e] flex items-center justify-center"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-[350px] md:h-[350px] rounded-full bg-gradient-to-r from-[#1c355c] to-[#efae1e] flex items-center justify-center"
           >
-            <div className="w-82.5 h-82.5 rounded-full bg-slate-950 flex items-center justify-center">
-              <h1 className="text-[80px] font-bold">AM</h1>
+            <div className="w-60 h-60 sm:w-68 md:w-[330px] md:h-[330px] rounded-full bg-slate-950 flex items-center justify-center">
+              <h1 className="text-6xl sm:text-7xl md:text-[80px] font-bold">
+                AM
+              </h1>
             </div>
           </motion.div>
 
-          <FaReact className="absolute top-5 left-10 text-cyan-400 text-5xl animate-bounce" />
+          <FaReact className="absolute top-2 left-5 md:top-5 md:left-10 text-4xl md:text-5xl text-cyan-400 animate-bounce" />
 
-          <SiNextdotjs className="absolute top-10 right-8 text-white text-4xl" />
+          <SiNextdotjs className="absolute top-5 right-5 md:top-10 md:right-8 text-3xl md:text-4xl text-white" />
 
-          <SiRedux className="absolute bottom-16 left-5 text-purple-500 text-4xl " />
+          <SiRedux className="absolute bottom-10 left-2 md:bottom-16 md:left-5 text-3xl md:text-4xl text-purple-500" />
 
-          <SiTailwindcss className="absolute bottom-10 right-10 text-sky-400 text-4xl" />
+          <SiTailwindcss className="absolute bottom-6 right-4 md:bottom-10 md:right-10 text-3xl md:text-4xl text-sky-400" />
 
-          <FaNodeJs className="absolute top-1/2 -right-4 text-green-500 text-5xl animate-pulse" />
+          <FaNodeJs className="absolute top-1/2 -right-2 md:-right-4 text-4xl md:text-5xl text-green-500 animate-pulse" />
         </div>
       </div>
     </section>

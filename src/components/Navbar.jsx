@@ -7,9 +7,9 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
       className="fixed top-0 left-0 w-full z-50
-      backdrop-blur-lg bg-white/5 border-b border-white/10"
+      backdrop-blur-lg bg-white/5 border-b border-white/10 "
     >
-      <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-18 items-center justify-between hidden md:flex">
         <h1 className="text-2xl font-bold">
           Portfolio<span className="text-[#efae1e]">.</span>
         </h1>
