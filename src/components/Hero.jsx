@@ -11,12 +11,12 @@ import { SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
 import { TypeAnimation } from "react-type-animation";
 
 const whatsappMessage = encodeURIComponent(
-  "👋 Hi Aakashdeep!\n\nI visited your portfolio website and I'm interested in working with you.\n\nCould we discuss my project?",
+  "Hi Aakashdeep!\n\nI visited your portfolio website and I'm interested in working with you.\n\nCould we discuss my project?",
 );
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-5 md:px-6 py-20 md:py-0">
+    <section className="min-h-screen flex items-center justify-center px-5 lg:px-6 py-12 lg:py-0">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center">
         {/* LEFT */}
         <div className="order-2 md:order-1 text-center md:text-left">
@@ -106,7 +106,7 @@ const Hero = () => {
             </a>
 
             <a
-              href={`https://wa.me/919795071712?text=${whatsappMessage}`}
+              href={`https://wa.me/7007072808?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-500 transition-all duration-300 hover:-translate-y-1"

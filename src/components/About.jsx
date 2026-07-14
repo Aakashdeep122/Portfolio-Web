@@ -19,19 +19,19 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-6 max-w-7xl mx-auto"
+      className="px-5 lg:px-0 lg:py-6 max-w-7xl mx-auto"
     >
       <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="text-5xl font-bold mb-12"
+        className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-12"
       >
         About Me
       </motion.h2>
 
-      <div className="grid md:grid-cols-2 gap-12">
+      <div className="grid md:grid-cols-2 gap-6 lg:gap-12">
         <div>
-          <p className="text-gray-400 leading-8">
+          <p className="text-gray-400 leading-6.5 lg:leading-8">
             Frontend Developer with 1.5+ years of
             experience creating scalable,
             SEO-optimized and high-performance
@@ -39,17 +39,17 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-2 lg:gap-5">
           {stats.map((item) => (
             <div
               key={item.title}
-              className="bg-white/5 border border-white/10 p-6 rounded-2xl"
+              className="bg-white/5 border border-white/10 py-4 px-3 lg:p-6 rounded-2xl"
             >
-              <h3 className="text-3xl font-bold text-[#efae1e]">
+              <h3 className="text-2xl lg:text-3xl font-bold text-[#efae1e]">
                 {item.number}
               </h3>
 
-              <p>{item.title}</p>
+              <p className="text-sm lg:text-base">{item.title}</p>
             </div>
           ))}
         </div>

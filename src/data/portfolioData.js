@@ -16,26 +16,27 @@ export const projects = [
   {
     title: "Weather Dashboard",
     desc: "Weather forecasting application.",
+    github: "https://github.com/Aakashdeep122/weather-dashboard",
   },
-
   {
     title: "Stunel",
-    desc: "Stunel is a education platform for students.",
+    desc: "Stunel is an education platform for students.",
+    github: "https://github.com/Aakashdeep122/stunel",
   },
-
   {
-    title: "Eshoper",
+    title: "Eshop",
     desc: "Full-stack e-commerce application.",
+    github: "https://github.com/Aakashdeep122/Eshop_react",
   },
-
   {
     title: "IELTS LMS",
     desc: "AI-powered LMS platform with Mistral AI integration.",
+    github: "https://github.com/Aakashdeep122/ielts-lms",
   },
-
   {
     title: "EDU Platform",
     desc: "Multi-tenant education management system.",
+    github: "https://github.com/Aakashdeep122/edu-executive",
   },
 ];
 
