@@ -120,15 +120,27 @@ const Hero = () => {
         <div className="order-1 md:order-2 relative flex justify-center mb-8 md:mb-0 ">
           <motion.div
             animate={{
+              background: [
+                "conic-gradient(from 0deg, #1c355c, #efae1e, #1c355c)",
+                "conic-gradient(from 360deg, #1c355c, #efae1e, #1c355c)",
+              ],
               y: [0, -20, 0],
             }}
             transition={{
-              repeat: Infinity,
-              duration: 4,
+              background: {
+                duration: 9,
+                repeat: Infinity,
+                ease: "linear",
+              },
+              y: {
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
             }}
-            className="w-64 h-64 sm:w-72 sm:h-72 md:w-[350px] md:h-[350px] rounded-full bg-gradient-to-r from-[#1c355c] to-[#efae1e] flex items-center justify-center"
+            className="w-63.5 h-63.5 md:w-87 md:h-87 rounded-full flex items-center justify-center"
           >
-            <div className="w-60 h-60 sm:w-68 md:w-[330px] md:h-[330px] rounded-full bg-slate-950 flex items-center justify-center">
+            <div className="w-60 h-60 md:w-83 md:h-83 rounded-full bg-slate-950 flex items-center justify-center">
               <h1 className="text-6xl sm:text-7xl md:text-[80px] font-bold">
                 AM
               </h1>

@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-8 lg:py-16 max-w-4xl mx-auto px-6">
+    <section id="contact" className="py-8 px-6 lg:pb-16 lg:pt-14 max-w-4xl mx-auto">
       <h2 className="text-3xl lg:text-5xl font-bold mb-4 lg:mb-12 md:text-center">
         Let's Work Together
       </h2>
@@ -55,7 +55,7 @@ const Contact = () => {
         />
 
         <input
-          name="subject"
+          name="from_subject"
           type="text"
           placeholder="Subject"
           required
