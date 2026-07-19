@@ -43,7 +43,7 @@ export const projects = [
 export const experiences = [
   {
     company: "IFLEX Technologies Pvt. Ltd.",
-    role: "Frontend Developer",
+    role: "Software Developer",
     period: "Mar 2025 - Present",
     points: [
       "Built scalable React.js and Next.js applications",
@@ -55,7 +55,7 @@ export const experiences = [
 
   {
     company: "Think Straight Information Technology LLP",
-    role: "Software Developer",
+    role: "Frontend Developer",
     period: "Sep 2024 - Feb 2025",
     points: [
       "Built responsive React applications",
